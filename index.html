@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="beep-sound" src="beep.mp3" preload="auto"></audio>
+
+  <div id="fullscreen-popup" class="popup hidden">Press F11 for fullscreen mode</div>
+
+ 
+
+  <section id="cd1">
+    <div id="title">
+      <img src="stopwatch.png" alt="maze icon" style="width: 50px; height: 50px;">
+      <h1>SetnTick</h1>
+    </div>
+
+    <div id="countdownwrapper" class="chars11">
+      <div class="countdowninner">
+        <div id="input-heading">
+          <p>Enter countdown time to start</p>
+        </div>
+
+        <div id="input-container">
+          <input type="number" id="days-input" placeholder="DD" min="0">
+          <input type="number" id="hours" placeholder="HH" min="0" max="23">
+          <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+          <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+          <button id="start-button">Start Countdown</button>
+        </div>
+
+        <div id="countdown1" class="countdown hidden">
+          <div id="digitgroup0" class="digitgroup">
+            <div class="number">
+              <span id="days-tens" class="digit">0</span>
+              <span id="days-ones" class="digit">0</span>
+            </div>
+            <div class="unit">
+              <span class="one">day</span>
+              <span class="many">days</span>
+            </div>
+          </div>
+          <div class="dsep sepr"><div class="csep"></div></div>
+
+          <div id="digitgroup1" class="digitgroup">
+            <div class="number">
+              <span id="hours-tens" class="digit">0</span>
+              <span id="hours-ones" class="digit">0</span>
+            </div>
+            <div class="unit">
+              <span class="one">hour</span>
+              <span class="many">hours</span>
+            </div>
+          </div>
+          <div class="hsep sepr"><div class="csep"></div></div>
+
+          <div id="digitgroup2" class="digitgroup">
+            <div class="number">
+              <span id="minutes-tens" class="digit">0</span>
+              <span id="minutes-ones" class="digit">0</span>
+            </div>
+            <div class="unit">
+              <span class="one">minute</span>
+              <span class="many">minutes</span>
+            </div>
+          </div>
+          <div class="msep sepr"><div class="csep"></div></div>
+
+          <div id="digitgroup3" class="digitgroup">
+            <div class="number">
+              <span id="seconds-tens" class="digit">0</span>
+              <span id="seconds-ones" class="digit">0</span>
+            </div>
+            <div class="unit">
+              <span class="one">second</span>
+              <span class="many">seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

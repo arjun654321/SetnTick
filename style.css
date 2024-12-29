@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: Montserrat, Arial, sans-serif;
+  background-color: #07121f;
+  color: #fff;
+  min-height: 100vh;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#title h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+
+
+#input-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+section#cd1 {
+  width: 100%;
+  padding: 200px 5%;
+  box-sizing: border-box;
+}
+
+#countdownwrapper {
+  width: 87%;
+  margin: 0 auto;
+}
+
+#input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#input-container input {
+  font-family: times;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 3rem;
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+}
+
+
+
+
+
+#input-container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 100px;
+}
+
+.digitgroup {
+  text-align: center;
+}
+
+.number {
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+.unit {
+  font-size: 24px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.sepr {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.csep {
+  width: 2px;
+  height: 20px;
+  background-color: #666;
+}
+
+.one {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.number {
+  animation: digitPop 0.3s ease-out;
+}
+
+.digit {
+  display: inline-block;
+  width: 0.6em;
+}
+
+.digit.pop {
+  animation: digitPop 0.3s ease-out;
+}
+
+.digitgroup {
+  text-align: center;
+  min-width: 120px;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.digit {
+  display: inline-block;
+  width: 0.5em;
+  text-align: center;
+}
+
+.unit {
+  width: 110%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sepr {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.csep {
+  width: 2px;
+  height: 20px;
+  background-color: #666;
+}
+
+.digit.pop {
+  animation: digitPop 0.3s ease-out;
+}
+
+
+
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup.hidden {
+  display: none;
+  opacity: 0;
+}
